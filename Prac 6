@@ -1,0 +1,38 @@
+Program:
+// Interface
+interface Shape {
+ void draw(); // abstract method
+}
+// First implementation
+class Circle implements Shape {
+ public void draw() {
+ System.out.println("Drawing Circle");
+ }
+}
+// Second implementation
+class Rectangle implements Shape {
+ public void draw() {
+ System.out.println("Drawing Rectangle");
+ }
+}
+// Third implementation
+class Triangle implements Shape {
+ public void draw() {
+ System.out.println("Drawing Triangle");
+ }
+}
+// Main class
+public class InterfaceDemo {
+ public static void main(String[] args) {
+ 
+ // Polymorphism using interface reference
+ Shape s;
+ s = new Circle();
+ s.draw();
+ s = new Rectangle();
+ s.draw();
+ s = new Triangle();
+ s.draw();
+ }
+}
+ 
